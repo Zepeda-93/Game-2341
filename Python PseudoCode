@@ -1,0 +1,123 @@
+Print("Hello")
+
+mycariable =5
+
+def myfuction(x, y):
+    return x * y
+
+print(myfuction(myvariable, 52))
+
+mylist = [4,6,2,5,"bob"]
+
+for value in mylist:
+    print(value)
+
+mydictionary = {"name": "George", "Age": 37, "job": "programmer"}
+
+for Value in mydictionary:
+    print(mydictionary[value])
+
+print(mylist{0})
+
+somewords = "YELLINGGG"
+print(somewords.lower())
+
+for x in range (5):
+    Print(x)
+
+if myvariable % 2 ==1: #odd
+    print("odd")
+
+answer = input("What is your age?")
+
+while not answer.isdigit():
+    print("Hey that's not your number >:(")
+    answer = input("what is your age?")
+
+print ("yay awesome")
+answer = int(answer)
+print("you will be ", answer + 5, " in 5 years")
+
+
+#In Python
+#1
+#convert user input into all caps, print the result
+#Bonus: make sure they don't type a number
+
+text = input("Type something: ")
+
+while text.isdigit():
+    print("That's a number! Try again.")
+    text = input("Type something: ")
+
+print("Your text in ALL CAPS:", text.upper())
+
+#2
+#Ask the user for two numbers, add them together then print the result
+#Bonus, Make sure the user does not type a string
+
+num1 = input("Enter the first number: ")
+num2 = input("Enter the second number: ")
+
+while not num1.isdigit():
+    print("Hey! That’s not a number.")
+    num1 = input("Enter the first number: ")
+
+while not num2.isdigit():
+    print("Hey! That’s not a number.")
+    num2 = input("Enter the second number: ")
+
+num1 = int(num1)
+num2 = int(num2)
+result = num1 + num2
+
+print("The sum of your two numbers is:", result)
+
+#3
+#Get an unknown amount of numbers from the user, add them together, print the result
+#Bonus, Make sure the user does not type a string
+
+userContinue = "Y"
+total = 0
+
+While userContinue != "N" :
+    answer = input("Give me the number")
+    while not answer.isdigit():
+        print(not a number)
+        answer = input("Give me a number")
+    answer = int(answer)
+    total = total + answer
+    userContinue = input("Do you want to enter another? Y or N")
+
+print(total)
+
+#4
+#Have the user define the maximum whole number, print out a random number between 0 and that maximum, allow the user to go again or quit
+
+import random
+
+print(random.random())
+print(random.randint(1, 100))
+
+#5
+#Get a random number, if the number is EVEN print RIGHT, and if the number is ODD print LEFT
+#Do this ten times then print out how many left and rights
+
+import random
+
+def check_even_odd():
+    """Generates a random number, checks if it's even or odd, and prints 'RIGHT' or 'LEFT'."""
+    left_count = 0
+    right_count = 0
+
+    for _ in range(10):
+        number = random.randint(1, 100)  # Generates a random integer between 1 and 100
+        if number % 2 == 0:
+            print("RIGHT")
+            right_count += 1
+        else:
+            print("LEFT")
+            left_count += 1
+
+    print(f"\nTotal LEFTs: {left_count}")
+    print(f"Total RIGHTs: {right_count}")
